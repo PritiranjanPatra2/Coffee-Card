@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .container{
+            min-height: 70vh;
+            min-width: 50%;
+            border: 1px solid black;
+            padding: 10%;
+        }
+        .white{
+            height: 20vh;
+            width: 100%;
+            background-color: white;
+        }
+        .yellow{
+            min-height: 50vh;
+            width: 100%;
+            background-color: #F0C50B;
+            display: flex;
+            
+            
+        }
+        img{
+            width: 60%;
+            height: 90%;
+            box-shadow: 1px 2px 3px black;
+            transform: translateY(-100px);       
+        }
+        .img,.des{
+            flex-grow: 1;
+            flex: 1;
+        }
+        .des{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            row-gap: 5%;
+            /* text-align: center; */
+
+        }
+        button{
+            /* text-align: center; */
+            /* margin:  0 auto; */
+            /* font-size: 1rem; */
+            border-radius: 3px;
+            padding: 2px;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        @media (max-width:1079px){
+            .yellow{
+                display: flex;
+                flex-direction: column;
+                
+                /* row-gap: 5px; */
+            }
+            img{
+         height: 40%;
+            width: 30%;
+            }
+            h1{
+                /* display: block; */
+                margin: auto;
+                font-size: 2rem;
+                /* text-align: center; */
+            }
+            p{
+                text-align: center;
+            }
+            button{
+                margin: auto;
+            }
+            .des{
+                justify-content: center;
+                align-items: center;
+                row-gap: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="white">
+
+        </div>
+        <div class="yellow">
+            <div class="img">
+                <img src="img/coffee.jpg" alt="">
+            </div>
+            <div class="des">
+                <h1>Certified Coffee Courses</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nam officiis, itaque reprehenderit dolore sequi quos in nesciunt cum molestiae!</p>
+                <p>Image from freepik.com</p>
+                <button>Learn More</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
